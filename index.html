@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+        </header>
+        <form action="" method="post">
+            <div class="page" id="page1">
+                <h1>Quelle est votre situation ? </h1>
+                <div>
+                
+                    <input type="radio" name="Situation" value="Celibataire" id="Celibataire" /> <label for="Celibataire">Celibataire</label><br />
+                    <input type="radio" name="Situation" value="Marié(e)/Pacsé(e)" id="Marié(e)/Pacsé(e)" /> <label for="Marié(e)/Pacsé(e)">Marié(e) / Pacsé(e)</label><br />
+                    <input type="radio" name="Situation" value="Divorcé(e)" id="Divorcé(e)" /> <label for="Divorcé(e)">Divorcé(e)</label><br />
+                    <input type="radio" name="Situation" value="EnConcubinage" id="EnConcubinage" /> <label for="EnConcubinage">En concubinage</label><br />
+                    <input type="radio" name="Situation" value="Veuf" id="Veuf" /> <label for="Veuf">Veuf</label><br />
+                    
+                    
+                </div>
+               
+                <button class="next" type="button">Suivant</button>
+            </div>
+            <div class="page" id="page2">
+                <h1>Quel âge avez-vous ?</h1>
+                <div>
+                    <label for="âge">Pour identifier les meilleurs dispositifs</label>
+                    <input type="number"  min="18" max="120" id="âge"/>
+                </div>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+
+            </div>
+            <div class="page" id="page3">
+                <h1>Combien d'enfants à charge avez-vous? </h1>
+                <div>
+                
+                    <input type="radio" name="Enfant" value="1" id="1" /> <label for="1">1</label><br />
+                    <input type="radio" name="Enfant" value="2" id="2" /> <label for="2">2</label><br />
+                    <input type="radio" name="Enfant" value="3" id="3" /> <label for="3">3</label><br />
+                    <input type="radio" name="Enfant" value="4+" id="4+" /> <label for="4+">4+</label><br />
+                    
+    
+                    
+                    
+                </div>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            </div>
+
+                <div class="page" id="page4">
+                    <h1>Quelle est votre activité ?</h1>
+                    <div>
+                        <input type="radio" name="activité" value="Salarié(e)" id="Salarié(e)" /> <label for="Salarié(e)">Salarié(e)</label><br />
+                        <input type="radio" name="activité" value="Indépendant(e)/Dirigeant(e)" id="Indépendant(e)/Dirigeant(e)" /> <label for="Indépendant(e)/Dirigeant(e)">Indépendant(e) / Dirigeant(e)</label><br />
+                        <input type="radio" name="activité" value="Étudiant(e)/Apprenti(e)" id="Étudiant(e)/Apprenti(e)" /> <label for="Étudiant(e)/Apprenti(e)">Étudiant(e) / Apprenti(e)</label><br />
+                        <input type="radio" name="activité" value="Au chômage/Sans activitée" id="Au chômage/Sans activité" /> <label for="Au chômage/Sans activité">Au chômage / Sans activité</label><br />
+                        <input type="radio" name="activité" value="Retraité(e)" id="Retraité(e)" /> <label for="Retraité(e)">Retraité(e)</label><br />
+                       
+    
+                        
+                    </div>
+                    <button class="prev" type="button">Précédent</button>
+                    <button class="next" type="button">Suivant</button>
+                </div>
+
+                <div class="page" id="page5">
+                    <h1>Quels sont vos revenus nets par mois avant impôt de votre foyer ?</h1>
+                    <div>
+                        <label for="revenus">Pour simuler votre montant d'imposition</label>
+                        <input type="number"  min="1250 " step="1000" id="salaire"/>
+                    </div>
+                    <button class="prev" type="button">Précédent</button>
+                    <button class="next" type="button">Suivant</button>
+    
+                </div>
+
+                <div class="page" id="page6">
+                    <h1>Quel est votre montant à investir ?</h1>
+                    <div>
+                        <input type="radio" name="investissement" value="Entre0€et5000€" id="Entre5000€et5000€" /> <label for="Entre0€et5000€">Entre 0 € et 5 000 €</label><br />
+                        <input type="radio" name="investissement" value="Entre5000€et50000€"id="Entre5000€et50000€" /> <label for="Entre5000€et50000€">Entre 5 000 € et 50 000 €</label><br />
+                        <input type="radio" name="investissement" value="Plusde50000€" id="Plusde50000€" /> <label for="Plusde50000€">Plus de 50 000€</label><br />
+                        
+                        
+                    </div>
+                    <button class="prev" type="button">Précédent</button>
+                    <button class="next" type="button">Suivant</button>
+                </div>
+
+                <div class="page" id="page7">
+                    <h1>Concernant votre logement, vous êtes:</h1>
+                    <div>
+                        <input type="radio" name="logement" value="Propriétaire" id="Propriétaire" /> <label for="Propriétaire">Propriétaire</label><br />
+                        <input type="radio" name="logement" value="Locataire"id="Locataire" /> <label for="Locataire">Locataire</label><br />
+                        <input type="radio" name="logement" value="Hebergé(e)gratuitement" id="Hebergé(e)gratuitement" /> <label for="Hebergé(e) gratuitement">Hebergé(e) gratuitement</label><br />
+                        
+                        
+                    </div>
+                    <button class="prev" type="button">Précédent</button>
+                    <button class="next" type="button">Suivant</button>
+                </div>
+
+            <div class="page" id="page8">
+                <h1>Informations</h1>
+                <div>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+                <div>
+                    <label for="cp">Code postal :</label>
+                    <input type="text" id="cp" name="cp">
+                </div>
+                <div>
+                    <label for="ville">Ville :</label>
+                    <input type="text" id="ville" name="ville">
+                </div>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            </div>
+            <div class="page" id="page9">
+            
+                <h1>Identité</h1>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+                <div>
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+               
+                <button class="prev" type="button">Précédent</button>
+                <button>Terminer</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
