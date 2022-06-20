@@ -1,6 +1,7 @@
 // On va chercher les différents éléments de notre page
 const pages = document.querySelectorAll(".page")
-const header = document.querySelector("header")
+const header = document.querySelector( "header" )
+const lab = document.querySelector(".lab")
 const nbPages = pages.length // Nombre de pages du formulaire
 let pageActive = 1
 
@@ -22,6 +23,7 @@ window.onload = () => {
         element.innerHTML = index + 1
         header.appendChild(element)
     })
+
 
     // On gère les boutons "suivant"
     let boutons = document.querySelectorAll(".next")

@@ -1,9 +1,12 @@
 main{
     width: 80%;
-    height: 70%;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
+    border: 1px solid rgb(16, 14, 14);
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 input{
     display: block;
@@ -37,22 +40,14 @@ header{
     background-color: blue;
 }
 
-div .radio  {
-display: flex;
-flex-direction: column;
-    position:absolute ;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left:50%;
-border: solid 3px rgb(210, 210, 210) ;
-}
+
 
 
 input[type="radio"] {
     display: none ;
 }
 
-div .radio label {
+ div label.lab {
     position:relative;
     color:rgb(210, 210, 210);
     font-size: 30px;
@@ -64,7 +59,7 @@ div .radio label {
     cursor: pointer;
 
 }
- div .radio label:before{
+   label.lab:before{
 
      content: "";
      height: 30px;
@@ -73,13 +68,19 @@ div .radio label {
      border-radius: 50%;
      margin-right: 20px;
  }
- input[type="radio"]:checked + label {
+ input[type="radio"]:checked +  label.lab {
      background-color: rgb(210, 210, 210);;
      color: white;
  }
- input[type="radio"]:checked + label:before{
+ input[type="radio"]:checked +  label.lab:before{
      height: 16px;
      width: 16px ;
      border: 10px solid white;
      background-color:rgb(210, 210, 210);;
  }
+ 
+ label[for=âge] {
+    border: 2px solid rgb(234, 11, 11);
+    border-radius: 5px;
+    padding: 10px 50px;
+}
