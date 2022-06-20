@@ -1,58 +1,19 @@
 main{
     width: 80%;
-    border: 1px solid rgb(16, 14, 14);
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-div .radio  {
-    
-    position:relative;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left:50%;
-border: solid 3px rgb(2, 2, 3) ;
-}
-input[type="radio"] {
-    display: none ;
-}
-
-div .radio label {
-    position:relative;
-    color:rgb(210, 210, 210);
-    font-size: 30px;
-    border: 2px solid rgb(210, 210, 210);
-    border-radius: 5px;
-    padding: 10px 50px;
+    height: 70%;
     display: flex;
-    align-items: center;
-    cursor: pointer;
-   
+    flex-direction:row;
+    flex-wrap: nowrap;
 }
- div .radio label:before{
-     
-     content: "";
-     height: 30px;
-     width: 30px;
-     border: 3px solid rgb(210, 210, 210);;
-     border-radius: 50%;
-     margin-right: 20px;
- }
- input[type="radio"]:checked + label {
-     background-color: rgb(210, 210, 210);;
-     color: white;
- }
- input[type="radio"]:checked + label:before{
-     height: 16px;
-     width: 16px ;
-     border: 10px solid white;
-     background-color:rgb(210, 210, 210);;
- }
+input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
 .page{
     display: none;
 }
@@ -73,7 +34,52 @@ header{
 
 .active{
     color: white;
-    background-color: rgb(5, 5, 250);
+    background-color: blue;
+}
+
+div .radio  {
+display: flex;
+flex-direction: column;
+    position:absolute ;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+border: solid 3px rgb(210, 210, 210) ;
 }
 
 
+input[type="radio"] {
+    display: none ;
+}
+
+div .radio label {
+    position:relative;
+    color:rgb(210, 210, 210);
+    font-size: 30px;
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+ div .radio label:before{
+
+     content: "";
+     height: 30px;
+     width: 30px;
+     border: 3px solid rgb(210, 210, 210);;
+     border-radius: 50%;
+     margin-right: 20px;
+ }
+ input[type="radio"]:checked + label {
+     background-color: rgb(210, 210, 210);;
+     color: white;
+ }
+ input[type="radio"]:checked + label:before{
+     height: 16px;
+     width: 16px ;
+     border: 10px solid white;
+     background-color:rgb(210, 210, 210);;
+ }
