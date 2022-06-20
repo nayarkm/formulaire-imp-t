@@ -32,7 +32,7 @@ window.onload = () => {
         bouton.addEventListener("click", pageSuivante)
     }
 
-    // On gère les boutons "suivant"
+    // On gère les boutons "precedent"
     boutons = document.querySelectorAll(".prev")
 
     for(let bouton of boutons){
